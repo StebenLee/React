@@ -4,7 +4,7 @@
   "description": "Using React, ReactRouter, Redux to implement a gitgub finder web.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+       "start": "webpack-dev-server --colors --inline --content-base ."
   },
   "author": "jirlu",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
-    "react-tap-event-plugin": "^1.0.0",
+    "react-tap-event-plugin": "^2.0.0",
     "redux": "^3.5.2",
     "redux-actions": "^0.10.1",
     "redux-immutable": "^3.0.7",

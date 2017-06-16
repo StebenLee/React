@@ -11,18 +11,18 @@ import {
   hideSpinner,
 } from './uiActions';
 
-export const getGithub = (userId ='torvalds') => (
+export const getGithub = (userId = 'torvalds') => (
   (dispatch) => {
   	dispatch({ type: GET_GITHUB_INITIATE });
   	dispatch(showSpinner());
-  	fetch('https://api.github.com/${userId}')
+  	fetch('https://api.github.com/users/${userId}')
   	  .then(response => response.json())
-  	  .then((json) => {
+      .then((json) => {
   	    dispatch({ type: GET_GITHUB_SUCCESS, payload: { data: json } });
-  	    dispatch(hideSpinner());
-  	})
-  	.catch(() => dispatch({ type: GET_GITHUB_FAIL }));
+        dispatch(hideSpinner());
+      })
+      .catch(() => dispatch({ type: GET_GITHUB_FAIL }));
   }
-)
+);
 
 export const changeUserId = text => ({ type: CHAGE_USER_ID, payload: { userId: text } });

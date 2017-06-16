@@ -1,2 +1,2 @@
 export * from './uiActions';
-export * from  './githubActions';
+export * from './githubActions';
