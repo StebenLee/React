@@ -1,6 +1,6 @@
-##Using React + Redux + Node (Isomorphic) to develop a recipe web.
+## Using React + Redux + Node (Isomorphic) to develop a recipe web.
   
-###techs  
+### techs  
 1.React  
 2.Redux(redux-actions/redux-promise/redux-immutable)  
 3.React Router  
