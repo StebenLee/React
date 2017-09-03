@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import LoginBox from '../../components/LoginBox';
 
-import {
-	authStart,
-	showSpinner,
-	setUser,
+import { 
+  authStart,
+  showSpinner,
+  setUser,
 } from '../../actions';
 
 export default connect(
@@ -33,3 +33,4 @@ export default connect(
     });
   }
 )(LoginBox);
+

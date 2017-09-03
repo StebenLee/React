@@ -8,3 +8,4 @@ export default connect(
   (dispatch) => ({
   })
 )(SharePage);
+

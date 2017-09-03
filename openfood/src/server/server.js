@@ -120,7 +120,7 @@ const compiler = webpack(webpackConfig);
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: webpackConfig.output.publicPath }));
 app.use(webpackHotMiddleware(compiler));
 
-//API prefix, apiRoutes handles api
+//API prefix, apiRoutes handles /api
 app.use('/api', apiRoutes);
 //handleRender
 app.use(handleRender);

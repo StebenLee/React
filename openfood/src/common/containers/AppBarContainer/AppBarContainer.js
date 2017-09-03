@@ -11,18 +11,18 @@ import {
 
 export default connect(
   (state) => ({
-  	isAuthorized: state.getIn(['user','isAuthorized']),
+    isAuthorized: state.getIn(['user', 'isAuthorized']),
   }),
   (dispatch) => ({
-  	onToShare: () => {
-  	  dispatch(setRecipe({ key: 'recipeId', value: '' }));
-  	  dispatch(setUi({ key: 'isEdit', value: false }));
-  	  window.location.reload();
-  	  browserHistory.push('/share');
-  	},
-  	onLogout: () => (
-  	  dispatch(startLogout(dispatch))
-  	),
+    onToShare: () => {
+      dispatch(setRecipe({ key: 'recipeId', value: '' }));
+      dispatch(setUi({ key: 'isEdit', value: false }));
+      window.location.reload();        
+      browserHistory.push('/share'); 
+    },
+    onLogout: () => (
+      dispatch(startLogout(dispatch))
+    ),
   })
-
 )(AppBar);
+

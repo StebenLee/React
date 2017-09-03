@@ -15,7 +15,7 @@ app.set('superSecret', config.secret);
 //If logging sucessfully, pass a token to cookie for 24 hours. 
 apiRoutes.post('/login', function(req, res) {
   //find the user
-  User.findeOne({
+  User.findOne({
   	email: req.body.email
   }, (err, user) => {
   	if (err) throw err;
